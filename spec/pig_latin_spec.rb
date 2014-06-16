@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe PigLatin do
-  context "First letter is a consonant, but not Q" do
+  context "First letter is a consonant, but not 'q'" do
     it "the first letter is moved to the end of the word, and 'ay' is added" do
       p = PigLatin.latinize("fun")
       expect(p).to eq("unfay")
@@ -11,8 +11,8 @@ describe PigLatin do
       p = PigLatin.latinize("glove")
       expect(p).to eq("oveglay")
 
-      p2 = PigtLatin.latinize("three")
-      expect(p).to eq("eethray")
+      p2 = PigLatin.latinize("three")
+      expect(p2).to eq("eethray")
     end
   end
 
